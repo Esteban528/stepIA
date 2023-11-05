@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: pychatbot:1
+    volumes:
+      - ./:/app
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
